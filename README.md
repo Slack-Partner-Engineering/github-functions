@@ -1,9 +1,9 @@
 # :octocat: GitHub Functions for Slack :octocat:
 
-This project aims to create sample GitHub functions for the Slack Beta Platform. It utilizes the beta sdk to create functions.
+This project aims to create sample GitHub functions for the Slack Beta Platform. It utilizes the beta Slack CLI to create functions.
 
 ## Disclaimer
-This a project built using pre-released features on the Slack Platform. It may contain bugs, performance issues, and isn't representative of the final product. This code in this project isn't meant to be a standard template. It may change or become obsolete as updates are released to the Slack Beta Platform.
+This project is built using pre-released features on the Slack Platform. It may contain bugs, performance issues, and isn't representative of the final product. The code in this project isn't meant to be a standard template. It may change or become legacy as updates are released to the Slack Beta Platform.
 
 ## Supported Functions
 1. List my PRs to review: list PRs for which you are tagged as a reviewer
@@ -25,3 +25,19 @@ https://user-images.githubusercontent.com/25628075/180052874-bc7c857c-d651-4908-
 5. Update issue: updates an issue inside of a repository
 
 https://user-images.githubusercontent.com/25628075/180053267-f2dbd457-4faf-49d8-af64-6bba807e36fc.mp4
+
+## Getting Started
+1. First, follow step 1 in this [guide](https://api.slack.com/future/quickstart) to make sure that you have the latest Slack CLI on your development machine
+2. Create your GitHub `personal access token` [here](https://github.com/settings/tokens). Select the scopes defined in the [scopes section](https://github.com/Slack-Partner-Engineering/github-functions/edit/main/README.md#github-personal-access-token-scopes)
+3. Try running a request with your new token, such as [this one](https://docs.github.com/en/rest/users/users#get-the-authenticated-user)
+4. Clone this repo
+5. Go to the root directory of the project
+6. Rename the `.sample.env` to `.env` and paste your access token. If you are an enterprise customer, enter your GitHub API URL without the `https://` (e.g. api.company-github.com)
+7. Follow steps 2 and 3 in the [quickstart guide](https://api.slack.com/future/functions#distribute) to run the functions! :rocket:
+
+## GitHub Personal Access Token Scopes
+Select the following scopes:
+- public_repo, repo:invite
+- read:org
+- read:user, user:email
+- read:enterprise
