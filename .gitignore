@@ -1,0 +1,7 @@
+/node_modules
+.DS_Store
+.env*
+.eslintrc.json
+package.json
+package-lock.json
+tsconfig.app.json.asd
