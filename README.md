@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/25628075/180053267-f2dbd457-4faf-49d8-
 
 ## Getting Started
 1. First, follow step 1 in this [guide](https://api.slack.com/future/quickstart) to make sure that you have the latest Slack CLI on your development machine
-2. Create your GitHub `personal access token` [here](https://github.com/settings/tokens). Select the scopes defined in the [scopes section](https://github.com/Slack-Partner-Engineering/github-functions/edit/main/README.md#github-personal-access-token-scopes)
+2. Create your GitHub `personal access token` [here](https://github.com/settings/tokens). Select the scopes defined in the [scopes section](https://github.com/Slack-Partner-Engineering/github-functions#github-personal-access-token-scopes)
 3. Try running a request with your new token, such as [this one](https://docs.github.com/en/rest/users/users#get-the-authenticated-user)
 4. Clone this repo
 5. Go to the root directory of the project
